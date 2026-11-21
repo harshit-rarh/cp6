@@ -3,8 +3,9 @@ terraform {
 }
 
 resource "terraform_data" "project" {
-  input = {
+    input = {
     project_name = var.project_name
     environment  = var.environment
+    version      = "v2"
   }
 }
